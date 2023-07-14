@@ -1,0 +1,125 @@
+body{
+    padding:0;
+    margin:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(181, 181, 227);
+    backdrop-filter: blur(1.5);
+}
+#background{
+    margin-top: 110px;
+    width:600px;
+    height: 500px;
+    background-color: rgba(130, 130, 139, 0.33);
+    box-shadow: 0 0 10px 0 rgba(102, 201, 210, 0.703);
+    border-radius: 10px;
+}
+
+#circle{
+    position: absolute;
+    margin-top:160px;
+    margin-left: 210px;
+    width:150px;
+    height: 150px;
+    background-color: rgba(231, 8, 219, 0.885);
+    border-radius:100%;
+    border:4px solid white;
+}
+
+#left{
+    position: absolute;
+    top:-09px;
+    left:110px;
+    width:50px;
+    height: 50px;
+    background-color:rgba(231, 8, 219, 0.885);
+    border-radius: 40px 0px;
+    border:4px solid white;
+    z-index: -1;
+}
+#right{
+    position: absolute;
+    top:-09px;
+    left:-9px;
+    transform:rotate(90deg);
+    width:50px;
+    height: 50px;
+    background-color:rgba(231, 8, 219, 0.885);
+    border-radius: 40px 0px;
+    z-index: -1;
+    border:4px solid white;
+}
+#left::after{
+    content:" ";
+    position: absolute;
+    top:5px;
+    left:5px;
+    width:40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 40px 0;
+}
+#right::after{
+    content:" ";
+    position: absolute;
+    top:5px;
+    left:5px;
+    width:40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 40px 0;
+}
+#eyes{
+    position: absolute;
+    width:25px;
+    height: 25px;
+    background-color:rgba(213, 135, 227, 0.892);
+    border-radius: 100%;
+    left:100px;
+    top:45px;
+    border:3px solid rgb(213, 192, 192);
+}
+#eyes::after{
+    content: " ";
+    position: absolute;
+    width:25px;
+    height: 25px;
+    background-color:rgba(213, 135, 227, 0.892);
+    border-radius: 100%;
+    left:-75px;
+    top:-3px;
+    border: 3px solid rgb(213, 192, 192);
+}
+#nose{
+    position:absolute;
+    top:80px;
+    left:45px;
+    width:60px;
+    height: 60px;
+    background-color:white;
+    border-radius: 50px 20px ;
+    transform: rotate(47deg);
+    border: 2px solid rgba(113, 52, 211, 0.932);
+}
+#hole1{
+    position: absolute;
+    top:100px;
+    left:54px;
+    transform: rotate(-47deg);
+    border-radius: 100%;
+    width:15px;
+    height: 20px;
+    background-color:rgba(213, 135, 227, 0.892);
+}
+#hole2{
+    content:" ";
+    position: absolute;
+    top:100px;
+    left:85px;
+    transform: rotate(47deg);
+    border-radius: 100%;
+    width:15px;
+    height: 20px;
+    background-color:rgba(213, 135, 227, 0.892);
+}
